@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Reminder water</string>
+    <string name="default_web_client_id" translatable="false">369708818215-n673t2hfe2j1dauu0m849mlaeaea1781.apps.googleusercontent.com</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>

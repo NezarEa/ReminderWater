@@ -1,0 +1,77 @@
+{
+  "project_info": {
+    "project_number": "138851602906",
+    "firebase_url": "https://reminder-water-23a84-default-rtdb.europe-west1.firebasedatabase.app",
+    "project_id": "reminder-water-23a84",
+    "storage_bucket": "reminder-water-23a84.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "138851602906-83kc8gctvcqidpbl0i8kcq9glj10ue21.apps.googleusercontent.com",
+        "android_client_info": {
+          "package_name": "com.reminderwater"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "369708818215-bhgj2j51matobhpudc3de6d8a4f74c2m.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCp4JE5ztLTVMLwXuTBq1FGdbn621aMcGY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "369708818215-bhgj2j51matobhpudc3de6d8a4f74c2m.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:138851602906:android:47117da0578ac393ca30e3",
+        "android_client_info": {
+          "package_name": "com.waterreminder"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "369708818215-bhgj2j51matobhpudc3de6d8a4f74c2m.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.waterreminder",
+            "certificate_hash": "658c923656bfcb48f443a39411cf9fcc9c6a7b09"
+          }
+        },
+        {
+          "client_id": "369708818215-bhgj2j51matobhpudc3de6d8a4f74c2m.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCp4JE5ztLTVMLwXuTBq1FGdbn621aMcGY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "369708818215-bhgj2j51matobhpudc3de6d8a4f74c2m.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

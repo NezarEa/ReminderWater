@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/viewPager">
+
+    <fragment
+        android:id="@+id/viewPager"
+        android:name="com.reminderwater.OnBoarding.Controle.ViewPager"
+        android:label="ViewPager"
+        tools:layout="@layout/fragment_view_pager">
+
+        <action
+            android:id="@+id/action_viewPager_to_login"
+            app:destination="@id/login"
+            app:popUpTo="@id/viewPager"
+            app:popUpToInclusive="true" />
+        <action
+            android:id="@+id/action_viewPager_to_water"
+            app:destination="@id/water"
+            app:popUpTo="@id/viewPager"
+            app:popUpToInclusive="true"
+            app:launchSingleTop="true" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/login"
+        android:name="com.reminderwater.Auth.Login"
+        android:label="Login"
+        tools:layout="@layout/fragment_login">
+
+        <action
+            android:id="@+id/action_login_to_sign"
+            app:destination="@id/sign" />
+        <action
+            android:id="@+id/action_login_to_water"
+            app:destination="@id/water"
+            app:popUpTo="@id/login"
+            app:popUpToInclusive="true"
+            app:launchSingleTop="true" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/sign"
+        android:name="com.reminderwater.Auth.Sign"
+        android:label="Sign Up"
+        tools:layout="@layout/fragment_sign">
+
+        <action
+            android:id="@+id/action_sign_to_login"
+            app:destination="@id/login"
+            app:popUpTo="@id/sign"
+            app:popUpToInclusive="true" />
+        <action
+            android:id="@+id/action_sign_to_water"
+            app:destination="@id/water"
+            app:popUpTo="@id/sign"
+            app:popUpToInclusive="true"
+            app:launchSingleTop="true" />
+        <action
+            android:id="@+id/action_sign_to_water2"
+            app:destination="@id/water" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/water"
+        android:name="com.reminderwater.Dashbord.Water"
+        android:label="Water Dashboard"
+        tools:layout="@layout/fragment_water">
+
+        <action
+            android:id="@+id/action_water_to_login"
+            app:destination="@id/login"
+            app:popUpTo="@id/water"
+            app:popUpToInclusive="true" />
+        <action
+            android:id="@+id/action_water_to_profile"
+            app:destination="@id/profile" />
+        <action
+            android:id="@+id/action_water_to_notification"
+            app:destination="@id/notification" />
+        <action
+            android:id="@+id/action_water_to_analysis"
+            app:destination="@id/analysis" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/profile"
+        android:name="com.reminderwater.Dashbord.Profile"
+        android:label="Profile"
+        tools:layout="@layout/fragment_profile" >
+        <action
+            android:id="@+id/action_profile_to_water"
+            app:destination="@id/water"
+            app:popUpTo="@id/profile"
+            app:popUpToInclusive="true" />
+        <action
+            android:id="@+id/action_profile_to_notification"
+            app:destination="@id/notification" />
+        <action
+            android:id="@+id/action_profile_to_analysis"
+            app:destination="@id/analysis" />
+        <action
+            android:id="@+id/action_profile_to_login"
+            app:destination="@id/login" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/notification"
+        android:name="com.reminderwater.Dashbord.Notification"
+        android:label="Notification"
+        tools:layout="@layout/fragment_notification" >
+        <action
+            android:id="@+id/action_notification_to_water"
+            app:destination="@id/water"
+            app:popUpTo="@id/notification"
+            app:popUpToInclusive="false" />
+        <action
+            android:id="@+id/action_notification_to_profile"
+            app:destination="@id/profile" />
+        <action
+            android:id="@+id/action_notification_to_analysis"
+            app:destination="@id/analysis" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/analysis"
+        android:name="com.reminderwater.Dashbord.Analysis"
+        android:label="Analysis"
+        tools:layout="@layout/fragment_analysis" >
+        <action
+            android:id="@+id/action_analysis_to_water"
+            app:destination="@id/water"
+            app:popUpTo="@id/analysis" />
+        <action
+            android:id="@+id/action_analysis_to_profile"
+            app:destination="@id/profile" />
+        <action
+            android:id="@+id/action_analysis_to_notification"
+            app:destination="@id/notification" />
+    </fragment>
+
+    <action
+        android:id="@+id/action_global_login"
+        app:destination="@id/login"
+        app:popUpTo="@id/nav_graph"
+        app:popUpToInclusive="true" />
+</navigation>
